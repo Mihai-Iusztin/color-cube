@@ -1,0 +1,86 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;
+    border:1px solid blue;
+    width:15.35rem;
+    height: 15.15rem;
+    z-index: 10;
+    background: black;
+    
+}
+div {
+    border: 2px solid black;
+    height: 5rem;
+    width: 5rem;
+    margin: 0.05rem;
+    border-radius: 3px;
+    z-index: 100;
+    background: yellow;
+    animation: fade_in_slow 1s;
+}
+@keyframes fade_in_slow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#rd {
+    display: flex;
+    flex-direction: row;
+}
+#cl22 {
+    border-radius: 9px;
+}
+#cl11 {
+    border-bottom-right-radius: 9px;
+}
+#cl12 {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+#cl13 {
+    border-bottom-left-radius: 9px;
+}
+#cl21 {
+    border-top-right-radius: 9px ;
+    border-bottom-right-radius: 9px;
+}
+#cl23 {
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+#cl31 {
+    border-top-right-radius: 9px ;
+}
+#cl32 {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+#cl33 {
+    border-top-left-radius: 9px;
+}
+
+button {
+    display: flex;
+    margin: 10rem auto 0 ;
+    background-color: rgb(7, 7, 91);
+    color: yellow;
+    font-size: 2rem;
+    border: 1px solid yellow;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+button:hover {
+    color: yellowgreen;
+    border: 1,5px solid yellowgreen;
+    box-shadow: 0 0.5rem 0.5rem yellowgreen;
+    transform: translateY(-0.25rem);
+    cursor: pointer;
+}
